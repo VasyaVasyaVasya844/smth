@@ -1,2 +1,2 @@
-# smthjhuh
+#  smth
 index.html
