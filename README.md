@@ -1,2 +1,2 @@
 #  smth
-index.html
+Методы интегрироавния.html
