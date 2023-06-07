@@ -1,3 +1,4 @@
+
 <html>
 
 <head>
@@ -82,118 +83,118 @@ ul
 
 <div class=WordSection1>
 
-<p class=MsoNormal align=center style='text-align:center'><b>Потоки и система
-ввода-вывода</b></p>
+<p class=MsoNormal align=center style='text-align:center'><b>РџРѕС‚РѕРєРё Рё СЃРёСЃС‚РµРјР°
+РІРІРѕРґР°-РІС‹РІРѕРґР°</b></p>
 
-<p class=MsoNormal style='text-indent:35.45pt'><b>Базовые типы для работы с
-потоками</b></p>
+<p class=MsoNormal style='text-indent:35.45pt'><b>Р‘Р°Р·РѕРІС‹Рµ С‚РёРїС‹ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ
+РїРѕС‚РѕРєР°РјРё</b></p>
 
-<p class=MsoNormal style='text-indent:35.45pt'>Все инструменты для работы с
-системой ввода-вывода и потоками в языке С++ определены в стандартной
-библиотеке. Заголовочный файл iostream определяет следующие базовые типы для
-работы с потоками:</p>
+<p class=MsoNormal style='text-indent:35.45pt'>Р’СЃРµ РёРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ
+СЃРёСЃС‚РµРјРѕР№ РІРІРѕРґР°-РІС‹РІРѕРґР° Рё РїРѕС‚РѕРєР°РјРё РІ СЏР·С‹РєРµ РЎ++ РѕРїСЂРµРґРµР»РµРЅС‹ РІ СЃС‚Р°РЅРґР°СЂС‚РЅРѕР№
+Р±РёР±Р»РёРѕС‚РµРєРµ. Р—Р°РіРѕР»РѕРІРѕС‡РЅС‹Р№ С„Р°Р№Р» iostream РѕРїСЂРµРґРµР»СЏРµС‚ СЃР»РµРґСѓСЋС‰РёРµ Р±Р°Р·РѕРІС‹Рµ С‚РёРїС‹ РґР»СЏ
+СЂР°Р±РѕС‚С‹ СЃ РїРѕС‚РѕРєР°РјРё:</p>
 
-<p class=MsoNormal>    istream и wistream: читают данные с потока</p>
+<p class=MsoNormal>    istream Рё wistream: С‡РёС‚Р°СЋС‚ РґР°РЅРЅС‹Рµ СЃ РїРѕС‚РѕРєР°</p>
 
-<p class=MsoNormal>    ostream и wostream: записывают данные в поток</p>
+<p class=MsoNormal>    ostream Рё wostream: Р·Р°РїРёСЃС‹РІР°СЋС‚ РґР°РЅРЅС‹Рµ РІ РїРѕС‚РѕРє</p>
 
-<p class=MsoNormal>    iostream и wiostream: читают и записывают данные в поток</p>
+<p class=MsoNormal>    iostream Рё wiostream: С‡РёС‚Р°СЋС‚ Рё Р·Р°РїРёСЃС‹РІР°СЋС‚ РґР°РЅРЅС‹Рµ РІ РїРѕС‚РѕРє</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для каждого
-типа определен его двойник, который начинается на букву w и который
-предназначен для поддержки данных типа wchar_t.</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Р”Р»СЏ РєР°Р¶РґРѕРіРѕ
+С‚РёРїР° РѕРїСЂРµРґРµР»РµРЅ РµРіРѕ РґРІРѕР№РЅРёРє, РєРѕС‚РѕСЂС‹Р№ РЅР°С‡РёРЅР°РµС‚СЃСЏ РЅР° Р±СѓРєРІСѓ w Рё РєРѕС‚РѕСЂС‹Р№
+РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РґР°РЅРЅС‹С… С‚РёРїР° wchar_t.</p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Эти типы
-являются базовыми для других классов, управляющих потоками ввода-вывода.</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Р­С‚Рё С‚РёРїС‹
+СЏРІР»СЏСЋС‚СЃСЏ Р±Р°Р·РѕРІС‹РјРё РґР»СЏ РґСЂСѓРіРёС… РєР»Р°СЃСЃРѕРІ, СѓРїСЂР°РІР»СЏСЋС‰РёС… РїРѕС‚РѕРєР°РјРё РІРІРѕРґР°-РІС‹РІРѕРґР°.</p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Объект типа
-ostream получает значения различных типов, преобразует их в последовательность
-символов и передает их через буфер в определенное место для вывода (консоль,
-файл, сетевые интерфейсы и т.д.)</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>РћР±СЉРµРєС‚ С‚РёРїР°
+ostream РїРѕР»СѓС‡Р°РµС‚ Р·РЅР°С‡РµРЅРёСЏ СЂР°Р·Р»РёС‡РЅС‹С… С‚РёРїРѕРІ, РїСЂРµРѕР±СЂР°Р·СѓРµС‚ РёС… РІ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ
+СЃРёРјРІРѕР»РѕРІ Рё РїРµСЂРµРґР°РµС‚ РёС… С‡РµСЂРµР· Р±СѓС„РµСЂ РІ РѕРїСЂРµРґРµР»РµРЅРЅРѕРµ РјРµСЃС‚Рѕ РґР»СЏ РІС‹РІРѕРґР° (РєРѕРЅСЃРѕР»СЊ,
+С„Р°Р№Р», СЃРµС‚РµРІС‹Рµ РёРЅС‚РµСЂС„РµР№СЃС‹ Рё С‚.Рґ.)</p>
 
-<p class=MsoNormal><span lang=EN-US><img width=623 height=102 id="Рисунок 1"
-src="Лаб_06%20-теория%20-%20Работа%20с%20потоками%20(новое).files/image001.png"></span></p>
+<p class=MsoNormal><span lang=EN-US><img width=623 height=102 id="Р РёСЃСѓРЅРѕРє 1"
+src="Р›Р°Р±_06%20-С‚РµРѕСЂРёСЏ%20-%20Р Р°Р±РѕС‚Р°%20СЃ%20РїРѕС‚РѕРєР°РјРё%20(РЅРѕРІРѕРµ).files/image001.png"></span></p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Поток istream
-получает через буфер из определенного места последовательности символов (с
-консоли, из файла, из сети и т.д.) и преобразует эти последовательности в
-значения различных типов. То есть когда мы вводим данные (с той же клавиатуры в
-консоли), сначала данные накапливаются в буфере и только затем передаются
-объекту istream.</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>РџРѕС‚РѕРє istream
+РїРѕР»СѓС‡Р°РµС‚ С‡РµСЂРµР· Р±СѓС„РµСЂ РёР· РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ РјРµСЃС‚Р° РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё СЃРёРјРІРѕР»РѕРІ (СЃ
+РєРѕРЅСЃРѕР»Рё, РёР· С„Р°Р№Р»Р°, РёР· СЃРµС‚Рё Рё С‚.Рґ.) Рё РїСЂРµРѕР±СЂР°Р·СѓРµС‚ СЌС‚Рё РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё РІ
+Р·РЅР°С‡РµРЅРёСЏ СЂР°Р·Р»РёС‡РЅС‹С… С‚РёРїРѕРІ. РўРѕ РµСЃС‚СЊ РєРѕРіРґР° РјС‹ РІРІРѕРґРёРј РґР°РЅРЅС‹Рµ (СЃ С‚РѕР№ Р¶Рµ РєР»Р°РІРёР°С‚СѓСЂС‹ РІ
+РєРѕРЅСЃРѕР»Рё), СЃРЅР°С‡Р°Р»Р° РґР°РЅРЅС‹Рµ РЅР°РєР°РїР»РёРІР°СЋС‚СЃСЏ РІ Р±СѓС„РµСЂРµ Рё С‚РѕР»СЊРєРѕ Р·Р°С‚РµРј РїРµСЂРµРґР°СЋС‚СЃСЏ
+РѕР±СЉРµРєС‚Сѓ istream.</p>
 
 <p class=MsoNormal style='text-align:justify'><img width=624 height=107
-id="Рисунок 2"
-src="Лаб_06%20-теория%20-%20Работа%20с%20потоками%20(новое).files/image002.png"></p>
+id="Р РёСЃСѓРЅРѕРє 2"
+src="Р›Р°Р±_06%20-С‚РµРѕСЂРёСЏ%20-%20Р Р°Р±РѕС‚Р°%20СЃ%20РїРѕС‚РѕРєР°РјРё%20(РЅРѕРІРѕРµ).files/image002.png"></p>
 
-<p class=MsoNormal style='text-align:justify'>По умолчанию в стандартной
-библиотеке определены объекты этих классов - cout, cin, cerr, которые работают
-с консолью.</p>
+<p class=MsoNormal style='text-align:justify'>РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РІ СЃС‚Р°РЅРґР°СЂС‚РЅРѕР№
+Р±РёР±Р»РёРѕС‚РµРєРµ РѕРїСЂРµРґРµР»РµРЅС‹ РѕР±СЉРµРєС‚С‹ СЌС‚РёС… РєР»Р°СЃСЃРѕРІ - cout, cin, cerr, РєРѕС‚РѕСЂС‹Рµ СЂР°Р±РѕС‚Р°СЋС‚
+СЃ РєРѕРЅСЃРѕР»СЊСЋ.</p>
 
-<p class=MsoNormal style='text-align:justify'><b>Запись в поток</b></p>
+<p class=MsoNormal style='text-align:justify'><b>Р—Р°РїРёСЃСЊ РІ РїРѕС‚РѕРє</b></p>
 
 <p class=MsoNormal style='text-align:justify'>&nbsp;</p>
 
-<p class=MsoNormal>Для записи данных в поток ostream применяется оператор
-&lt;&lt;. Этот оператор получает два операнда. Левый операнд представляет
-объект типа ostream, а правый операнд - значение, которое надо вывести в поток.</p>
+<p class=MsoNormal>Р”Р»СЏ Р·Р°РїРёСЃРё РґР°РЅРЅС‹С… РІ РїРѕС‚РѕРє ostream РїСЂРёРјРµРЅСЏРµС‚СЃСЏ РѕРїРµСЂР°С‚РѕСЂ
+&lt;&lt;. Р­С‚РѕС‚ РѕРїРµСЂР°С‚РѕСЂ РїРѕР»СѓС‡Р°РµС‚ РґРІР° РѕРїРµСЂР°РЅРґР°. Р›РµРІС‹Р№ РѕРїРµСЂР°РЅРґ РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚
+РѕР±СЉРµРєС‚ С‚РёРїР° ostream, Р° РїСЂР°РІС‹Р№ РѕРїРµСЂР°РЅРґ - Р·РЅР°С‡РµРЅРёРµ, РєРѕС‚РѕСЂРѕРµ РЅР°РґРѕ РІС‹РІРµСЃС‚Рё РІ РїРѕС‚РѕРє.</p>
 
-<p class=MsoNormal>К примеру, по умолчанию стандартная библиотека C++
-предоставляет объект cout, который представляет тип ostream и позволяет
-выводить данные на консоль:</p>
+<p class=MsoNormal>Рљ РїСЂРёРјРµСЂСѓ, РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ СЃС‚Р°РЅРґР°СЂС‚РЅР°СЏ Р±РёР±Р»РёРѕС‚РµРєР° C++
+РїСЂРµРґРѕСЃС‚Р°РІР»СЏРµС‚ РѕР±СЉРµРєС‚ cout, РєРѕС‚РѕСЂС‹Р№ РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚ С‚РёРї ostream Рё РїРѕР·РІРѕР»СЏРµС‚
+РІС‹РІРѕРґРёС‚СЊ РґР°РЅРЅС‹Рµ РЅР° РєРѕРЅСЃРѕР»СЊ:</p>
 
 <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
 
 <p class=MsoNormal><span lang=EN-US>#include &lt;iostream&gt;</span></p>
 
-<p class=MsoNormal><span lang=EN-US> int main()</span></p>
+<p class=MsoNormal><span lang=EN-US> int main()</span></p>
 
 <p class=MsoNormal><span lang=EN-US>{</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::cout &lt;&lt; &quot;Hello&quot;
+<p class=MsoNormal><span lang=EN-US>    std::cout &lt;&lt; &quot;Hello&quot;
 &lt;&lt; std::endl;</span></p>
 
 <p class=MsoNormal>}</p>
 
-<p class=MsoNormal style='text-indent:35.45pt'>Так как оператор &lt;&lt;
-возвращает левый операнд - cout, то с помощью цепочки операторов мы можем
-передать на консоль несколько значений:</p>
+<p class=MsoNormal style='text-indent:35.45pt'>РўР°Рє РєР°Рє РѕРїРµСЂР°С‚РѕСЂ &lt;&lt;
+РІРѕР·РІСЂР°С‰Р°РµС‚ Р»РµРІС‹Р№ РѕРїРµСЂР°РЅРґ - cout, С‚Рѕ СЃ РїРѕРјРѕС‰СЊСЋ С†РµРїРѕС‡РєРё РѕРїРµСЂР°С‚РѕСЂРѕРІ РјС‹ РјРѕР¶РµРј
+РїРµСЂРµРґР°С‚СЊ РЅР° РєРѕРЅСЃРѕР»СЊ РЅРµСЃРєРѕР»СЊРєРѕ Р·РЅР°С‡РµРЅРёР№:</p>
 
 <p class=MsoNormal><span lang=EN-US>std::cout &lt;&lt; &quot;Hello&quot;
 &lt;&lt; &quot; world&quot; &lt;&lt; std::endl;</span></p>
 
-<p class=MsoNormal style='text-indent:35.45pt'><b>Чтение данных</b></p>
+<p class=MsoNormal style='text-indent:35.45pt'><b>Р§С‚РµРЅРёРµ РґР°РЅРЅС‹С…</b></p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для чтения
-данных из потока применяется оператор ввода &gt;&gt;, который принимает два
-операнда. Левый операнд представляет поток istream, с которого производится
-считывание, а правый операнд - объект, в который считываются данные.</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Р”Р»СЏ С‡С‚РµРЅРёСЏ
+РґР°РЅРЅС‹С… РёР· РїРѕС‚РѕРєР° РїСЂРёРјРµРЅСЏРµС‚СЃСЏ РѕРїРµСЂР°С‚РѕСЂ РІРІРѕРґР° &gt;&gt;, РєРѕС‚РѕСЂС‹Р№ РїСЂРёРЅРёРјР°РµС‚ РґРІР°
+РѕРїРµСЂР°РЅРґР°. Р›РµРІС‹Р№ РѕРїРµСЂР°РЅРґ РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚ РїРѕС‚РѕРє istream, СЃ РєРѕС‚РѕСЂРѕРіРѕ РїСЂРѕРёР·РІРѕРґРёС‚СЃСЏ
+СЃС‡РёС‚С‹РІР°РЅРёРµ, Р° РїСЂР°РІС‹Р№ РѕРїРµСЂР°РЅРґ - РѕР±СЉРµРєС‚, РІ РєРѕС‚РѕСЂС‹Р№ СЃС‡РёС‚С‹РІР°СЋС‚СЃСЏ РґР°РЅРЅС‹Рµ.</p>
 
-<p class=MsoNormal style='text-indent:35.45pt'>Для чтения с консоли применяется
-объект cin, который представляет тип istream.</p>
+<p class=MsoNormal style='text-indent:35.45pt'>Р”Р»СЏ С‡С‚РµРЅРёСЏ СЃ РєРѕРЅСЃРѕР»Рё РїСЂРёРјРµРЅСЏРµС‚СЃСЏ
+РѕР±СЉРµРєС‚ cin, РєРѕС‚РѕСЂС‹Р№ РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚ С‚РёРї istream.</p>
 
 <p class=MsoNormal><span lang=EN-US>#include &lt;iostream&gt;</span></p>
 
-<p class=MsoNormal><span lang=EN-US> int main()</span></p>
+<p class=MsoNormal><span lang=EN-US> int main()</span></p>
 
-<p class=MsoNormal><span lang=EN-US>{   </span></p>
+<p class=MsoNormal><span lang=EN-US>{   </span></p>
 
-<p class=MsoNormal><span lang=EN-US>    int age;</span></p>
+<p class=MsoNormal><span lang=EN-US>    int age;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    double weight;</span></p>
+<p class=MsoNormal><span lang=EN-US>    double weight;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::cout &lt;&lt; &quot;Input age:
+<p class=MsoNormal><span lang=EN-US>    std::cout &lt;&lt; &quot;Input age:
 &quot;;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::cin &gt;&gt; age;</span></p>
+<p class=MsoNormal><span lang=EN-US>    std::cin &gt;&gt; age;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::cout &lt;&lt; &quot;Input weight:
+<p class=MsoNormal><span lang=EN-US>    std::cout &lt;&lt; &quot;Input weight:
 &quot;;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::cin &gt;&gt; weight;</span></p>
+<p class=MsoNormal><span lang=EN-US>    std::cin &gt;&gt; weight;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::cout &lt;&lt; &quot;Your age:
+<p class=MsoNormal><span lang=EN-US>    std::cout &lt;&lt; &quot;Your age:
 &quot; &lt;&lt; age &lt;&lt; &quot;\t your weight: &quot; &lt;&lt; weight
 &lt;&lt; std::endl;</span></p>
 
@@ -201,11 +202,11 @@ src="Лаб_06%20-теория%20-%20Работа%20с%20потоками%20(новое).files/image002.png">
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Однако такой
-способ не очень подходит для чтения строк с консоли особенно когда считываемая
-строка содержит пробельные символы. В этом случае лучше использовать встроенную
-функцию getline(), которая в качестве параметра принимает поток istream и
-переменную типа string, в которую надо считать данные:</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>РћРґРЅР°РєРѕ С‚Р°РєРѕР№
+СЃРїРѕСЃРѕР± РЅРµ РѕС‡РµРЅСЊ РїРѕРґС…РѕРґРёС‚ РґР»СЏ С‡С‚РµРЅРёСЏ СЃС‚СЂРѕРє СЃ РєРѕРЅСЃРѕР»Рё РѕСЃРѕР±РµРЅРЅРѕ РєРѕРіРґР° СЃС‡РёС‚С‹РІР°РµРјР°СЏ
+СЃС‚СЂРѕРєР° СЃРѕРґРµСЂР¶РёС‚ РїСЂРѕР±РµР»СЊРЅС‹Рµ СЃРёРјРІРѕР»С‹. Р’ СЌС‚РѕРј СЃР»СѓС‡Р°Рµ Р»СѓС‡С€Рµ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РІСЃС‚СЂРѕРµРЅРЅСѓСЋ
+С„СѓРЅРєС†РёСЋ getline(), РєРѕС‚РѕСЂР°СЏ РІ РєР°С‡РµСЃС‚РІРµ РїР°СЂР°РјРµС‚СЂР° РїСЂРёРЅРёРјР°РµС‚ РїРѕС‚РѕРє istream Рё
+РїРµСЂРµРјРµРЅРЅСѓСЋ С‚РёРїР° string, РІ РєРѕС‚РѕСЂСѓСЋ РЅР°РґРѕ СЃС‡РёС‚Р°С‚СЊ РґР°РЅРЅС‹Рµ:</p>
 
 <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
 
@@ -215,23 +216,23 @@ src="Лаб_06%20-теория%20-%20Работа%20с%20потоками%20(новое).files/image002.png">
 
 <p class=MsoNormal><span lang=EN-US>{</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::string name;</span></p>
+<p class=MsoNormal><span lang=EN-US>    std::string name;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::cout &lt;&lt; &quot;Input name:
+<p class=MsoNormal><span lang=EN-US>    std::cout &lt;&lt; &quot;Input name:
 &quot;;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    getline(std::cin, name);</span></p>
+<p class=MsoNormal><span lang=EN-US>    getline(std::cin, name);</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    //std::cin &gt;&gt; name;</span></p>
+<p class=MsoNormal><span lang=EN-US>    //std::cin &gt;&gt; name;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::cout &lt;&lt; &quot;Your name:
+<p class=MsoNormal><span lang=EN-US>    std::cout &lt;&lt; &quot;Your name:
 &quot; &lt;&lt; name &lt;&lt;std::endl;</span></p>
 
 <p class=MsoNormal>}</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal>Пример работы программы:</p>
+<p class=MsoNormal>РџСЂРёРјРµСЂ СЂР°Р±РѕС‚С‹ РїСЂРѕРіСЂР°РјРјС‹:</p>
 
 <p class=MsoNormal>Input name: Tom Smit</p>
 
@@ -239,11 +240,11 @@ src="Лаб_06%20-теория%20-%20Работа%20с%20потоками%20(новое).files/image002.png">
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>По умолчанию
-признаком окончания ввода служит перевод на другую строку, например, с помощью
-клавиши Enter. Но также можно задать свой признак окончания ввода с помощью
-дополнительного параметра функции getline(). Для этого надо передать символ,
-который будет служить окончанием ввода:</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
+РїСЂРёР·РЅР°РєРѕРј РѕРєРѕРЅС‡Р°РЅРёСЏ РІРІРѕРґР° СЃР»СѓР¶РёС‚ РїРµСЂРµРІРѕРґ РЅР° РґСЂСѓРіСѓСЋ СЃС‚СЂРѕРєСѓ, РЅР°РїСЂРёРјРµСЂ, СЃ РїРѕРјРѕС‰СЊСЋ
+РєР»Р°РІРёС€Рё Enter. РќРѕ С‚Р°РєР¶Рµ РјРѕР¶РЅРѕ Р·Р°РґР°С‚СЊ СЃРІРѕР№ РїСЂРёР·РЅР°Рє РѕРєРѕРЅС‡Р°РЅРёСЏ РІРІРѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ
+РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРіРѕ РїР°СЂР°РјРµС‚СЂР° С„СѓРЅРєС†РёРё getline(). Р”Р»СЏ СЌС‚РѕРіРѕ РЅР°РґРѕ РїРµСЂРµРґР°С‚СЊ СЃРёРјРІРѕР»,
+РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ СЃР»СѓР¶РёС‚СЊ РѕРєРѕРЅС‡Р°РЅРёРµРј РІРІРѕРґР°:</p>
 
 <p class=MsoNormal><span lang=EN-US>#include &lt;iostream&gt;</span></p>
 
@@ -251,30 +252,30 @@ src="Лаб_06%20-теория%20-%20Работа%20с%20потоками%20(новое).files/image002.png">
 
 <p class=MsoNormal><span lang=EN-US>{</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::string text;</span></p>
+<p class=MsoNormal><span lang=EN-US>    std::string text;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::cout &lt;&lt; &quot;Input text:
+<p class=MsoNormal><span lang=EN-US>    std::cout &lt;&lt; &quot;Input text:
 &quot; &lt;&lt; std::endl;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    </span>getline(std::cin, text, '*');  
-// окончанием ввода будет служить символ *</p>
+<p class=MsoNormal><span lang=EN-US>    </span>getline(std::cin, text, '*');  
+// РѕРєРѕРЅС‡Р°РЅРёРµРј РІРІРѕРґР° Р±СѓРґРµС‚ СЃР»СѓР¶РёС‚СЊ СЃРёРјРІРѕР» *</p>
 
-<p class=MsoNormal>    <span lang=EN-US>std::cout &lt;&lt; &quot;\nYour
+<p class=MsoNormal>    <span lang=EN-US>std::cout &lt;&lt; &quot;\nYour
 text:&quot; &lt;&lt;std::endl;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::cout &lt;&lt; text
+<p class=MsoNormal><span lang=EN-US>    std::cout &lt;&lt; text
 &lt;&lt;std::endl;</span></p>
 
 <p class=MsoNormal>}</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>В данном
-случае ввод завершится, когда пользователь введет символ *. Таким образом, мы
-можем ввести многострочный текст, но при вводе звездочки ввод завершится. </p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Р’ РґР°РЅРЅРѕРј
+СЃР»СѓС‡Р°Рµ РІРІРѕРґ Р·Р°РІРµСЂС€РёС‚СЃСЏ, РєРѕРіРґР° РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РІРІРµРґРµС‚ СЃРёРјРІРѕР» *. РўР°РєРёРј РѕР±СЂР°Р·РѕРј, РјС‹
+РјРѕР¶РµРј РІРІРµСЃС‚Рё РјРЅРѕРіРѕСЃС‚СЂРѕС‡РЅС‹Р№ С‚РµРєСЃС‚, РЅРѕ РїСЂРё РІРІРѕРґРµ Р·РІРµР·РґРѕС‡РєРё РІРІРѕРґ Р·Р°РІРµСЂС€РёС‚СЃСЏ. </p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Пример работы
-программы:</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>РџСЂРёРјРµСЂ СЂР°Р±РѕС‚С‹
+РїСЂРѕРіСЂР°РјРјС‹:</p>
 
 <p class=MsoNormal><span lang=EN-US>Input</span><span lang=EN-US> </span><span
 lang=EN-US>text</span>:</p>
@@ -293,11 +294,11 @@ lang=EN-US>text</span>:</p>
 
 <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
 
-<p class=MsoNormal style='text-indent:35.45pt'><b>Вывод ошибок</b></p>
+<p class=MsoNormal style='text-indent:35.45pt'><b>Р’С‹РІРѕРґ РѕС€РёР±РѕРє</b></p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для вывода
-сообщения об ошибке на консоль применяется объект cerr, который представляет
-объект типа ostream:</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Р”Р»СЏ РІС‹РІРѕРґР°
+СЃРѕРѕР±С‰РµРЅРёСЏ РѕР± РѕС€РёР±РєРµ РЅР° РєРѕРЅСЃРѕР»СЊ РїСЂРёРјРµРЅСЏРµС‚СЃСЏ РѕР±СЉРµРєС‚ cerr, РєРѕС‚РѕСЂС‹Р№ РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚
+РѕР±СЉРµРєС‚ С‚РёРїР° ostream:</p>
 
 <p class=MsoNormal>#include &lt;iostream&gt;</p>
 
@@ -305,23 +306,23 @@ lang=EN-US>text</span>:</p>
 
 <p class=MsoNormal><span lang=EN-US>{</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::cerr &lt;&lt; &quot;Error
+<p class=MsoNormal><span lang=EN-US>    std::cerr &lt;&lt; &quot;Error
 occured&quot; &lt;&lt; std::endl;</span></p>
 
 <p class=MsoNormal><span lang=EN-US>}</span></p>
 
-<p class=MsoNormal style='text-indent:35.45pt'><b>Потоки</b><b> символов</b><b><span
+<p class=MsoNormal style='text-indent:35.45pt'><b>РџРѕС‚РѕРєРё</b><b> СЃРёРјРІРѕР»РѕРІ</b><b><span
 lang=EN-US> wchar_t</span></b></p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для работы с потоками
-данных типов <span lang=EN-US>wchar</span>_<span lang=EN-US>t</span><span
-lang=EN-US> </span>в стандартной библиотеке определены объекты <span
-lang=EN-US>wcout</span> (тип <span lang=EN-US>wostream</span>), <span
-lang=EN-US>wcerr</span> (тип <span lang=EN-US>wostream</span>) и <span
-lang=EN-US>wcin</span> (тип <span lang=EN-US>wistream</span>), которые являются
-аналогами для объектов <span lang=EN-US>cout</span>, <span lang=EN-US>cerr</span><span
-lang=EN-US> </span>и <span lang=EN-US>cin</span><span lang=EN-US> </span>и работают
-аналогично</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Р”Р»СЏ СЂР°Р±РѕС‚С‹ СЃ РїРѕС‚РѕРєР°РјРё
+РґР°РЅРЅС‹С… С‚РёРїРѕРІ <span lang=EN-US>wchar</span>_<span lang=EN-US>t</span><span
+lang=EN-US> </span>РІ СЃС‚Р°РЅРґР°СЂС‚РЅРѕР№ Р±РёР±Р»РёРѕС‚РµРєРµ РѕРїСЂРµРґРµР»РµРЅС‹ РѕР±СЉРµРєС‚С‹ <span
+lang=EN-US>wcout</span> (С‚РёРї <span lang=EN-US>wostream</span>), <span
+lang=EN-US>wcerr</span> (С‚РёРї <span lang=EN-US>wostream</span>) Рё <span
+lang=EN-US>wcin</span> (С‚РёРї <span lang=EN-US>wistream</span>), РєРѕС‚РѕСЂС‹Рµ СЏРІР»СЏСЋС‚СЃСЏ
+Р°РЅР°Р»РѕРіР°РјРё РґР»СЏ РѕР±СЉРµРєС‚РѕРІ <span lang=EN-US>cout</span>, <span lang=EN-US>cerr</span><span
+lang=EN-US> </span>Рё <span lang=EN-US>cin</span><span lang=EN-US> </span>Рё СЂР°Р±РѕС‚Р°СЋС‚
+Р°РЅР°Р»РѕРіРёС‡РЅРѕ</p>
 
 <p class=MsoNormal>#include &lt;iostream&gt;</p>
 
@@ -329,28 +330,28 @@ lang=EN-US> </span>и <span lang=EN-US>cin</span><span lang=EN-US> </span>и работ
 
 <p class=MsoNormal><span lang=EN-US>{</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    int age;</span></p>
+<p class=MsoNormal><span lang=EN-US>    int age;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    double weight;</span></p>
+<p class=MsoNormal><span lang=EN-US>    double weight;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::wcout &lt;&lt; &quot;Input age:
+<p class=MsoNormal><span lang=EN-US>    std::wcout &lt;&lt; &quot;Input age:
 &quot;;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::wcin &gt;&gt; age;</span></p>
+<p class=MsoNormal><span lang=EN-US>    std::wcin &gt;&gt; age;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::wcout &lt;&lt; &quot;Input weight:
+<p class=MsoNormal><span lang=EN-US>    std::wcout &lt;&lt; &quot;Input weight:
 &quot;;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::wcin &gt;&gt; weight;</span></p>
+<p class=MsoNormal><span lang=EN-US>    std::wcin &gt;&gt; weight;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    if (age &lt;= 0 || weight &lt;= 0)</span></p>
+<p class=MsoNormal><span lang=EN-US>    if (age &lt;= 0 || weight &lt;= 0)</span></p>
 
-<p class=MsoNormal><span lang=EN-US>        std::wcerr &lt;&lt; &quot;Invalid
+<p class=MsoNormal><span lang=EN-US>        std::wcerr &lt;&lt; &quot;Invalid
 data&quot; &lt;&lt; std::endl;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    else</span></p>
+<p class=MsoNormal><span lang=EN-US>    else</span></p>
 
-<p class=MsoNormal><span lang=EN-US>        std::wcout &lt;&lt; &quot;Your age:
+<p class=MsoNormal><span lang=EN-US>        std::wcout &lt;&lt; &quot;Your age:
 &quot; &lt;&lt; age &lt;&lt; &quot;\t your weight: &quot; &lt;&lt; weight
 &lt;&lt; std::endl;</span></p>
 
@@ -358,139 +359,139 @@ data&quot; &lt;&lt; std::endl;</span></p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal align=center style='text-align:center'><b>Файловые потоки.
-Открытие и закрытие</b></p>
+<p class=MsoNormal align=center style='text-align:center'><b>Р¤Р°Р№Р»РѕРІС‹Рµ РїРѕС‚РѕРєРё.
+РћС‚РєСЂС‹С‚РёРµ Рё Р·Р°РєСЂС‹С‚РёРµ</b></p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для работы с
-файлами в стандартной библиотеке определен заголовочный файл fstream, который
-определяет базовые типы для чтения и записи файлов. В частности, это:</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Р”Р»СЏ СЂР°Р±РѕС‚С‹ СЃ
+С„Р°Р№Р»Р°РјРё РІ СЃС‚Р°РЅРґР°СЂС‚РЅРѕР№ Р±РёР±Р»РёРѕС‚РµРєРµ РѕРїСЂРµРґРµР»РµРЅ Р·Р°РіРѕР»РѕРІРѕС‡РЅС‹Р№ С„Р°Р№Р» fstream, РєРѕС‚РѕСЂС‹Р№
+РѕРїСЂРµРґРµР»СЏРµС‚ Р±Р°Р·РѕРІС‹Рµ С‚РёРїС‹ РґР»СЏ С‡С‚РµРЅРёСЏ Рё Р·Р°РїРёСЃРё С„Р°Р№Р»РѕРІ. Р’ С‡Р°СЃС‚РЅРѕСЃС‚Рё, СЌС‚Рѕ:</p>
 
-<p class=MsoNormal>    ifstream: для чтения с файла</p>
+<p class=MsoNormal>    ifstream: РґР»СЏ С‡С‚РµРЅРёСЏ СЃ С„Р°Р№Р»Р°</p>
 
-<p class=MsoNormal>    ofstream: для записи в файл</p>
+<p class=MsoNormal>    ofstream: РґР»СЏ Р·Р°РїРёСЃРё РІ С„Р°Р№Р»</p>
 
-<p class=MsoNormal>    fstream: совмещает запись и чтение</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal style='text-indent:35.45pt'>Для работы с данными типа
-wchar_t для этих потоков определены двойники:</p>
-
-<p class=MsoNormal>    wifstream</p>
-
-<p class=MsoNormal>    wofstream</p>
-
-<p class=MsoNormal>    wfstream</p>
+<p class=MsoNormal>    fstream: СЃРѕРІРјРµС‰Р°РµС‚ Р·Р°РїРёСЃСЊ Рё С‡С‚РµРЅРёРµ</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal style='text-indent:35.45pt'><b>Открытие файла</b></p>
+<p class=MsoNormal style='text-indent:35.45pt'>Р”Р»СЏ СЂР°Р±РѕС‚С‹ СЃ РґР°РЅРЅС‹РјРё С‚РёРїР°
+wchar_t РґР»СЏ СЌС‚РёС… РїРѕС‚РѕРєРѕРІ РѕРїСЂРµРґРµР»РµРЅС‹ РґРІРѕР№РЅРёРєРё:</p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>При операциях
-с файлом вначале необходимо открыть файл с помощью функции open(). Данная
-функция имеет две версии:</p>
+<p class=MsoNormal>    wifstream</p>
+
+<p class=MsoNormal>    wofstream</p>
+
+<p class=MsoNormal>    wfstream</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal align=center style='text-align:center'>open(путь)</p>
+<p class=MsoNormal style='text-indent:35.45pt'><b>РћС‚РєСЂС‹С‚РёРµ С„Р°Р№Р»Р°</b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>РџСЂРё РѕРїРµСЂР°С†РёСЏС…
+СЃ С„Р°Р№Р»РѕРј РІРЅР°С‡Р°Р»Рµ РЅРµРѕР±С…РѕРґРёРјРѕ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» СЃ РїРѕРјРѕС‰СЊСЋ С„СѓРЅРєС†РёРё open(). Р”Р°РЅРЅР°СЏ
+С„СѓРЅРєС†РёСЏ РёРјРµРµС‚ РґРІРµ РІРµСЂСЃРёРё:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal align=center style='text-align:center'>open(РїСѓС‚СЊ)</p>
 
 <p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
 
-<p class=MsoNormal align=center style='text-align:center'>open(путь, режим)</p>
+<p class=MsoNormal align=center style='text-align:center'>open(РїСѓС‚СЊ, СЂРµР¶РёРј)</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для открытия
-файла в функцию необходимо передать путь к файлу в виде строки. И также можно
-указать режим открытия. Список доступных режимов открытия файла:</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Р”Р»СЏ РѕС‚РєСЂС‹С‚РёСЏ
+С„Р°Р№Р»Р° РІ С„СѓРЅРєС†РёСЋ РЅРµРѕР±С…РѕРґРёРјРѕ РїРµСЂРµРґР°С‚СЊ РїСѓС‚СЊ Рє С„Р°Р№Р»Сѓ РІ РІРёРґРµ СЃС‚СЂРѕРєРё. Р С‚Р°РєР¶Рµ РјРѕР¶РЅРѕ
+СѓРєР°Р·Р°С‚СЊ СЂРµР¶РёРј РѕС‚РєСЂС‹С‚РёСЏ. РЎРїРёСЃРѕРє РґРѕСЃС‚СѓРїРЅС‹С… СЂРµР¶РёРјРѕРІ РѕС‚РєСЂС‹С‚РёСЏ С„Р°Р№Р»Р°:</p>
 
 <p class=MsoListParagraphCxSpFirst style='margin-left:14.2pt;text-align:justify;
-text-indent:-14.2pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>ios::in: файл открывается для ввода (чтения). Может быть
-установлен только для объекта ifstream или fstream</p>
+text-indent:-14.2pt'><span style='font-family:Symbol'>В·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>ios::in: С„Р°Р№Р» РѕС‚РєСЂС‹РІР°РµС‚СЃСЏ РґР»СЏ РІРІРѕРґР° (С‡С‚РµРЅРёСЏ). РњРѕР¶РµС‚ Р±С‹С‚СЊ
+СѓСЃС‚Р°РЅРѕРІР»РµРЅ С‚РѕР»СЊРєРѕ РґР»СЏ РѕР±СЉРµРєС‚Р° ifstream РёР»Рё fstream</p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:14.2pt;text-align:justify;
-text-indent:-14.2pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>ios::out: файл открывается для вывода (записи). При этом старые
-данные удаляются. Может быть установлен только для объекта ofstream или fstream</p>
+text-indent:-14.2pt'><span style='font-family:Symbol'>В·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>ios::out: С„Р°Р№Р» РѕС‚РєСЂС‹РІР°РµС‚СЃСЏ РґР»СЏ РІС‹РІРѕРґР° (Р·Р°РїРёСЃРё). РџСЂРё СЌС‚РѕРј СЃС‚Р°СЂС‹Рµ
+РґР°РЅРЅС‹Рµ СѓРґР°Р»СЏСЋС‚СЃСЏ. РњРѕР¶РµС‚ Р±С‹С‚СЊ СѓСЃС‚Р°РЅРѕРІР»РµРЅ С‚РѕР»СЊРєРѕ РґР»СЏ РѕР±СЉРµРєС‚Р° ofstream РёР»Рё fstream</p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:14.2pt;text-align:justify;
-text-indent:-14.2pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>ios::app: файл открывается для дозаписи. Старые данные не
-удаляются.</p>
+text-indent:-14.2pt'><span style='font-family:Symbol'>В·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>ios::app: С„Р°Р№Р» РѕС‚РєСЂС‹РІР°РµС‚СЃСЏ РґР»СЏ РґРѕР·Р°РїРёСЃРё. РЎС‚Р°СЂС‹Рµ РґР°РЅРЅС‹Рµ РЅРµ
+СѓРґР°Р»СЏСЋС‚СЃСЏ.</p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:14.2pt;text-align:justify;
-text-indent:-14.2pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>ios::ate: после открытия файла перемещает указатель в конец файла</p>
+text-indent:-14.2pt'><span style='font-family:Symbol'>В·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>ios::ate: РїРѕСЃР»Рµ РѕС‚РєСЂС‹С‚РёСЏ С„Р°Р№Р»Р° РїРµСЂРµРјРµС‰Р°РµС‚ СѓРєР°Р·Р°С‚РµР»СЊ РІ РєРѕРЅРµС† С„Р°Р№Р»Р°</p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:14.2pt;text-align:justify;
-text-indent:-14.2pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>ios::trunc: файл усекается при открытии. Может быть установлен,
-если также установлен режим out</p>
+text-indent:-14.2pt'><span style='font-family:Symbol'>В·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>ios::trunc: С„Р°Р№Р» СѓСЃРµРєР°РµС‚СЃСЏ РїСЂРё РѕС‚РєСЂС‹С‚РёРё. РњРѕР¶РµС‚ Р±С‹С‚СЊ СѓСЃС‚Р°РЅРѕРІР»РµРЅ,
+РµСЃР»Рё С‚Р°РєР¶Рµ СѓСЃС‚Р°РЅРѕРІР»РµРЅ СЂРµР¶РёРј out</p>
 
 <p class=MsoListParagraphCxSpLast style='margin-left:14.2pt;text-align:justify;
-text-indent:-14.2pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>ios::binary: файл открывается в бинарном режиме</p>
+text-indent:-14.2pt'><span style='font-family:Symbol'>В·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>ios::binary: С„Р°Р№Р» РѕС‚РєСЂС‹РІР°РµС‚СЃСЏ РІ Р±РёРЅР°СЂРЅРѕРј СЂРµР¶РёРјРµ</p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Если при
-открытии режим не указан, то по умолчанию для объектов ofstream применяется
-режим ios::out, а для объектов ifstream - режим ios::in. Для объектов fstream
-совмещаются режимы ios::out и ios::in.</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Р•СЃР»Рё РїСЂРё
+РѕС‚РєСЂС‹С‚РёРё СЂРµР¶РёРј РЅРµ СѓРєР°Р·Р°РЅ, С‚Рѕ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РґР»СЏ РѕР±СЉРµРєС‚РѕРІ ofstream РїСЂРёРјРµРЅСЏРµС‚СЃСЏ
+СЂРµР¶РёРј ios::out, Р° РґР»СЏ РѕР±СЉРµРєС‚РѕРІ ifstream - СЂРµР¶РёРј ios::in. Р”Р»СЏ РѕР±СЉРµРєС‚РѕРІ fstream
+СЃРѕРІРјРµС‰Р°СЋС‚СЃСЏ СЂРµР¶РёРјС‹ ios::out Рё ios::in.</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal>std::ofstream out;           // поток для записи</p>
+<p class=MsoNormal>std::ofstream out;           // РїРѕС‚РѕРє РґР»СЏ Р·Р°РїРёСЃРё</p>
 
-<p class=MsoNormal>out.open(&quot;hello1.txt&quot;); // окрываем файл для
-записи</p>
+<p class=MsoNormal>out.open(&quot;hello1.txt&quot;); // РѕРєСЂС‹РІР°РµРј С„Р°Р№Р» РґР»СЏ
+Р·Р°РїРёСЃРё</p>
 
-<p class=MsoNormal>               </p>
+<p class=MsoNormal>               </p>
 
 <p class=MsoNormal><span lang=EN-US>std::ofstream out2;</span></p>
 
 <p class=MsoNormal><span lang=EN-US>out2.open(&quot;hello2.txt&quot;,
-std::ios::app); // </span>окрываем файл для дозаписи</p>
+std::ios::app); // </span>РѕРєСЂС‹РІР°РµРј С„Р°Р№Р» РґР»СЏ РґРѕР·Р°РїРёСЃРё</p>
 
 <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
 
 <p class=MsoNormal><span lang=EN-US>std::ofstream out3;</span></p>
 
 <p class=MsoNormal><span lang=EN-US>out2.open(&quot;hello3.txt&quot;,
-std::ios::out | std::ios::trunc); // </span>установка нескольких режимов</p>
+std::ios::out | std::ios::trunc); // </span>СѓСЃС‚Р°РЅРѕРІРєР° РЅРµСЃРєРѕР»СЊРєРёС… СЂРµР¶РёРјРѕРІ</p>
 
 <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
 
-<p class=MsoNormal>std::ifstream in;                              // поток для
-чтения</p>
+<p class=MsoNormal>std::ifstream in;                              // РїРѕС‚РѕРє РґР»СЏ
+С‡С‚РµРЅРёСЏ</p>
 
-<p class=MsoNormal>in.open(&quot;hello4.txt&quot;);    // открываем файл для
-чтения</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>std::fstream fs;                // поток для чтения-записи</p>
-
-<p class=MsoNormal>fs.open(&quot;hello5.txt&quot;);    // открываем файл для
-чтения-записи</p>
+<p class=MsoNormal>in.open(&quot;hello4.txt&quot;);    // РѕС‚РєСЂС‹РІР°РµРј С„Р°Р№Р» РґР»СЏ
+С‡С‚РµРЅРёСЏ</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Однако в
-принципе необязательно использовать функцию open для открытия файла. В качестве
-альтернативы можно также использовать конструктор объектов-потоков и передавать
-в них путь к файлу и режим открытия:</p>
+<p class=MsoNormal>std::fstream fs;                // РїРѕС‚РѕРє РґР»СЏ С‡С‚РµРЅРёСЏ-Р·Р°РїРёСЃРё</p>
+
+<p class=MsoNormal>fs.open(&quot;hello5.txt&quot;);    // РѕС‚РєСЂС‹РІР°РµРј С„Р°Р№Р» РґР»СЏ
+С‡С‚РµРЅРёСЏ-Р·Р°РїРёСЃРё</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal align=center style='text-align:center'>fstream(путь)</p>
-
-<p class=MsoNormal align=center style='text-align:center'>fstream(путь, режим)</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>РћРґРЅР°РєРѕ РІ
+РїСЂРёРЅС†РёРїРµ РЅРµРѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ С„СѓРЅРєС†РёСЋ open РґР»СЏ РѕС‚РєСЂС‹С‚РёСЏ С„Р°Р№Р»Р°. Р’ РєР°С‡РµСЃС‚РІРµ
+Р°Р»СЊС‚РµСЂРЅР°С‚РёРІС‹ РјРѕР¶РЅРѕ С‚Р°РєР¶Рµ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РѕР±СЉРµРєС‚РѕРІ-РїРѕС‚РѕРєРѕРІ Рё РїРµСЂРµРґР°РІР°С‚СЊ
+РІ РЅРёС… РїСѓС‚СЊ Рє С„Р°Р№Р»Сѓ Рё СЂРµР¶РёРј РѕС‚РєСЂС‹С‚РёСЏ:</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>При вызове
-конструктора, в который передан путь к файлу, данный файл будет автоматически
-открываться:</p>
+<p class=MsoNormal align=center style='text-align:center'>fstream(РїСѓС‚СЊ)</p>
+
+<p class=MsoNormal align=center style='text-align:center'>fstream(РїСѓС‚СЊ, СЂРµР¶РёРј)</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>РџСЂРё РІС‹Р·РѕРІРµ
+РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°, РІ РєРѕС‚РѕСЂС‹Р№ РїРµСЂРµРґР°РЅ РїСѓС‚СЊ Рє С„Р°Р№Р»Сѓ, РґР°РЅРЅС‹Р№ С„Р°Р№Р» Р±СѓРґРµС‚ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё
+РѕС‚РєСЂС‹РІР°С‚СЊСЃСЏ:</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
@@ -503,46 +504,46 @@ std::ios::app);</span></p>
 
 <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>В данном
-случае предполагается, что файл &quot;hello.txt&quot; располагается в той же
-папке, где и файл программы.</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Р’ РґР°РЅРЅРѕРј
+СЃР»СѓС‡Р°Рµ РїСЂРµРґРїРѕР»Р°РіР°РµС‚СЃСЏ, С‡С‚Рѕ С„Р°Р№Р» &quot;hello.txt&quot; СЂР°СЃРїРѕР»Р°РіР°РµС‚СЃСЏ РІ С‚РѕР№ Р¶Рµ
+РїР°РїРєРµ, РіРґРµ Рё С„Р°Р№Р» РїСЂРѕРіСЂР°РјРјС‹.</p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Вообще
-использование конструкторов для открытия потока является более
-предпочтительным, так как определение переменной, представляющей файловой
-поток, уже преполагает, что этот поток будет открыт для чтения или записи. А
-использование конструктора избавит от ситуации, когда мы забудем открыть поток,
-но при этом начнем его использовать.</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Р’РѕРѕР±С‰Рµ
+РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂРѕРІ РґР»СЏ РѕС‚РєСЂС‹С‚РёСЏ РїРѕС‚РѕРєР° СЏРІР»СЏРµС‚СЃСЏ Р±РѕР»РµРµ
+РїСЂРµРґРїРѕС‡С‚РёС‚РµР»СЊРЅС‹Рј, С‚Р°Рє РєР°Рє РѕРїСЂРµРґРµР»РµРЅРёРµ РїРµСЂРµРјРµРЅРЅРѕР№, РїСЂРµРґСЃС‚Р°РІР»СЏСЋС‰РµР№ С„Р°Р№Р»РѕРІРѕР№
+РїРѕС‚РѕРє, СѓР¶Рµ РїСЂРµРїРѕР»Р°РіР°РµС‚, С‡С‚Рѕ СЌС‚РѕС‚ РїРѕС‚РѕРє Р±СѓРґРµС‚ РѕС‚РєСЂС‹С‚ РґР»СЏ С‡С‚РµРЅРёСЏ РёР»Рё Р·Р°РїРёСЃРё. Рђ
+РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° РёР·Р±Р°РІРёС‚ РѕС‚ СЃРёС‚СѓР°С†РёРё, РєРѕРіРґР° РјС‹ Р·Р°Р±СѓРґРµРј РѕС‚РєСЂС‹С‚СЊ РїРѕС‚РѕРє,
+РЅРѕ РїСЂРё СЌС‚РѕРј РЅР°С‡РЅРµРј РµРіРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ.</p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>В процессе
-работы мы можем проверить, окрыт ли файл с помощью функции is_open(). Если файл
-открыт, то она возвращает true:</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Р’ РїСЂРѕС†РµСЃСЃРµ
+СЂР°Р±РѕС‚С‹ РјС‹ РјРѕР¶РµРј РїСЂРѕРІРµСЂРёС‚СЊ, РѕРєСЂС‹С‚ Р»Рё С„Р°Р№Р» СЃ РїРѕРјРѕС‰СЊСЋ С„СѓРЅРєС†РёРё is_open(). Р•СЃР»Рё С„Р°Р№Р»
+РѕС‚РєСЂС‹С‚, С‚Рѕ РѕРЅР° РІРѕР·РІСЂР°С‰Р°РµС‚ true:</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal>std::ifstream in;                              // поток для
-чтения</p>
+<p class=MsoNormal>std::ifstream in;                              // РїРѕС‚РѕРє РґР»СЏ
+С‡С‚РµРЅРёСЏ</p>
 
-<p class=MsoNormal>in.open(&quot;hello.txt&quot;); // открываем файл для чтения</p>
+<p class=MsoNormal>in.open(&quot;hello.txt&quot;); // РѕС‚РєСЂС‹РІР°РµРј С„Р°Р№Р» РґР»СЏ С‡С‚РµРЅРёСЏ</p>
 
-<p class=MsoNormal>// если файл открыт</p>
+<p class=MsoNormal>// РµСЃР»Рё С„Р°Р№Р» РѕС‚РєСЂС‹С‚</p>
 
 <p class=MsoNormal>if (in.is_open())</p>
 
 <p class=MsoNormal>{</p>
 
-<p class=MsoNormal>…</p>
+<p class=MsoNormal>вЂ¦</p>
 
 <p class=MsoNormal>}</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal style='text-indent:35.45pt'><b>Закрытие файла</b></p>
+<p class=MsoNormal style='text-indent:35.45pt'><b>Р—Р°РєСЂС‹С‚РёРµ С„Р°Р№Р»Р°</b></p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>После
-завершения работы с файлом его следует закрыть с помощью функции close(). Также
-стоит отметить, то при выходе объекта потока из области видимости, он
-удаляется, и у него автоматически вызывается функция close.</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>РџРѕСЃР»Рµ
+Р·Р°РІРµСЂС€РµРЅРёСЏ СЂР°Р±РѕС‚С‹ СЃ С„Р°Р№Р»РѕРј РµРіРѕ СЃР»РµРґСѓРµС‚ Р·Р°РєСЂС‹С‚СЊ СЃ РїРѕРјРѕС‰СЊСЋ С„СѓРЅРєС†РёРё close(). РўР°РєР¶Рµ
+СЃС‚РѕРёС‚ РѕС‚РјРµС‚РёС‚СЊ, С‚Рѕ РїСЂРё РІС‹С…РѕРґРµ РѕР±СЉРµРєС‚Р° РїРѕС‚РѕРєР° РёР· РѕР±Р»Р°СЃС‚Рё РІРёРґРёРјРѕСЃС‚Рё, РѕРЅ
+СѓРґР°Р»СЏРµС‚СЃСЏ, Рё Сѓ РЅРµРіРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РІС‹Р·С‹РІР°РµС‚СЃСЏ С„СѓРЅРєС†РёСЏ close.</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
@@ -554,91 +555,91 @@ std::ios::app);</span></p>
 
 <p class=MsoNormal>{</p>
 
-<p class=MsoNormal>               std::ofstream out;           // поток для
-записи</p>
+<p class=MsoNormal>               std::ofstream out;           // РїРѕС‚РѕРє РґР»СЏ
+Р·Р°РїРёСЃРё</p>
 
-<p class=MsoNormal>               out.open(&quot;hello.txt&quot;);   //
-открываем файл для записи</p>
+<p class=MsoNormal>               out.open(&quot;hello.txt&quot;);   //
+РѕС‚РєСЂС‹РІР°РµРј С„Р°Р№Р» РґР»СЏ Р·Р°РїРёСЃРё</p>
 
-<p class=MsoNormal>               out.close();                        //
-закрываем файл</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>               std::ifstream in;                              //
-поток для чтения</p>
-
-<p class=MsoNormal>               in.open(&quot;hello.txt&quot;);      //
-открываем файл для чтения</p>
-
-<p class=MsoNormal>               in.close();                           //
-закрываем файл</p>
+<p class=MsoNormal>               out.close();                        //
+Р·Р°РєСЂС‹РІР°РµРј С„Р°Р№Р»</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal>               std::fstream fs;                // поток для
-чтения-записи</p>
+<p class=MsoNormal>               std::ifstream in;                              //
+РїРѕС‚РѕРє РґР»СЏ С‡С‚РµРЅРёСЏ</p>
 
-<p class=MsoNormal>               fs.open(&quot;hello.txt&quot;);       //
-открываем файл для чтения-записи</p>
+<p class=MsoNormal>               in.open(&quot;hello.txt&quot;);      //
+РѕС‚РєСЂС‹РІР°РµРј С„Р°Р№Р» РґР»СЏ С‡С‚РµРЅРёСЏ</p>
 
-<p class=MsoNormal>               fs.close();                           //
-закрываем файл</p>
+<p class=MsoNormal>               in.close();                           //
+Р·Р°РєСЂС‹РІР°РµРј С„Р°Р№Р»</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>               std::fstream fs;                // РїРѕС‚РѕРє РґР»СЏ
+С‡С‚РµРЅРёСЏ-Р·Р°РїРёСЃРё</p>
+
+<p class=MsoNormal>               fs.open(&quot;hello.txt&quot;);       //
+РѕС‚РєСЂС‹РІР°РµРј С„Р°Р№Р» РґР»СЏ С‡С‚РµРЅРёСЏ-Р·Р°РїРёСЃРё</p>
+
+<p class=MsoNormal>               fs.close();                           //
+Р·Р°РєСЂС‹РІР°РµРј С„Р°Р№Р»</p>
 
 <p class=MsoNormal>}</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal align=center style='text-align:center'><b>Чтение и запись
-текстовых файлов</b></p>
+<p class=MsoNormal align=center style='text-align:center'><b>Р§С‚РµРЅРёРµ Рё Р·Р°РїРёСЃСЊ
+С‚РµРєСЃС‚РѕРІС‹С… С„Р°Р№Р»РѕРІ</b></p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Потоки для работы
-с текстовыми файлами представляют объекты, для которых не задан режим открытия
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>РџРѕС‚РѕРєРё РґР»СЏ СЂР°Р±РѕС‚С‹
+СЃ С‚РµРєСЃС‚РѕРІС‹РјРё С„Р°Р№Р»Р°РјРё РїСЂРµРґСЃС‚Р°РІР»СЏСЋС‚ РѕР±СЉРµРєС‚С‹, РґР»СЏ РєРѕС‚РѕСЂС‹С… РЅРµ Р·Р°РґР°РЅ СЂРµР¶РёРј РѕС‚РєСЂС‹С‚РёСЏ
 ios::binary.</p>
 
-<p class=MsoNormal style='text-indent:35.45pt'><b>Запись в файл</b></p>
+<p class=MsoNormal style='text-indent:35.45pt'><b>Р—Р°РїРёСЃСЊ РІ С„Р°Р№Р»</b></p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для записи в
-файл к объекту ofstream или fstream применяется оператор &lt;&lt; (как и при
-выводе на консоль):</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Р”Р»СЏ Р·Р°РїРёСЃРё РІ
+С„Р°Р№Р» Рє РѕР±СЉРµРєС‚Сѓ ofstream РёР»Рё fstream РїСЂРёРјРµРЅСЏРµС‚СЃСЏ РѕРїРµСЂР°С‚РѕСЂ &lt;&lt; (РєР°Рє Рё РїСЂРё
+РІС‹РІРѕРґРµ РЅР° РєРѕРЅСЃРѕР»СЊ):</p>
 
 <p class=MsoNormal><span lang=EN-US>#include &lt;iostream&gt;</span></p>
 
 <p class=MsoNormal><span lang=EN-US>#include &lt;fstream&gt;</span></p>
 
-<p class=MsoNormal><span lang=EN-US> </span></p>
+<p class=MsoNormal><span lang=EN-US> </span></p>
 
 <p class=MsoNormal><span lang=EN-US>int main()</span></p>
 
 <p class=MsoNormal>{</p>
 
-<p class=MsoNormal>    std::ofstream out;          // поток для записи</p>
+<p class=MsoNormal>    std::ofstream out;          // РїРѕС‚РѕРє РґР»СЏ Р·Р°РїРёСЃРё</p>
 
-<p class=MsoNormal>    out.open(&quot;hello.txt&quot;);      // открываем файл
-для записи</p>
+<p class=MsoNormal>    out.open(&quot;hello.txt&quot;);      // РѕС‚РєСЂС‹РІР°РµРј С„Р°Р№Р»
+РґР»СЏ Р·Р°РїРёСЃРё</p>
 
-<p class=MsoNormal>    <span lang=EN-US>if (out.is_open())</span></p>
+<p class=MsoNormal>    <span lang=EN-US>if (out.is_open())</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    {</span></p>
+<p class=MsoNormal><span lang=EN-US>    {</span></p>
 
-<p class=MsoNormal><span lang=EN-US>        out &lt;&lt; &quot;Hello
+<p class=MsoNormal><span lang=EN-US>        out &lt;&lt; &quot;Hello
 World!&quot; &lt;&lt; std::endl;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    }</span></p>
+<p class=MsoNormal><span lang=EN-US>    }</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    out.close(); </span></p>
+<p class=MsoNormal><span lang=EN-US>    out.close(); </span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::cout &lt;&lt; &quot;File has been
+<p class=MsoNormal><span lang=EN-US>    std::cout &lt;&lt; &quot;File has been
 written&quot; &lt;&lt; std::endl;</span></p>
 
 <p class=MsoNormal>}</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Здесь
-предполагается, что файла &quot;hello.txt&quot; располагается в одной папке с
-файлом программы. Данный способ перезаписывает файл заново. Если надо
-дозаписать текст в конец файла, то для открытия файла нужно использовать режим
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Р—РґРµСЃСЊ
+РїСЂРµРґРїРѕР»Р°РіР°РµС‚СЃСЏ, С‡С‚Рѕ С„Р°Р№Р»Р° &quot;hello.txt&quot; СЂР°СЃРїРѕР»Р°РіР°РµС‚СЃСЏ РІ РѕРґРЅРѕР№ РїР°РїРєРµ СЃ
+С„Р°Р№Р»РѕРј РїСЂРѕРіСЂР°РјРјС‹. Р”Р°РЅРЅС‹Р№ СЃРїРѕСЃРѕР± РїРµСЂРµР·Р°РїРёСЃС‹РІР°РµС‚ С„Р°Р№Р» Р·Р°РЅРѕРІРѕ. Р•СЃР»Рё РЅР°РґРѕ
+РґРѕР·Р°РїРёСЃР°С‚СЊ С‚РµРєСЃС‚ РІ РєРѕРЅРµС† С„Р°Р№Р»Р°, С‚Рѕ РґР»СЏ РѕС‚РєСЂС‹С‚РёСЏ С„Р°Р№Р»Р° РЅСѓР¶РЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЂРµР¶РёРј
 ios::app:</p>
 
 <p class=MsoNormal><span lang=EN-US>std::ofstream out(&quot;hello.txt&quot;,
@@ -648,64 +649,64 @@ std::ios::app);</span></p>
 
 <p class=MsoNormal><span lang=EN-US>{</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    out &lt;&lt; &quot;Welcome to C++&quot;
+<p class=MsoNormal><span lang=EN-US>    out &lt;&lt; &quot;Welcome to C++&quot;
 &lt;&lt; std::endl;</span></p>
 
 <p class=MsoNormal>}</p>
 
-<p class=MsoNormal>out.close();        </p>
+<p class=MsoNormal>out.close();        </p>
 
 <p class=MsoNormal style='text-indent:35.45pt'><b>&nbsp;</b></p>
 
-<p class=MsoNormal style='text-indent:35.45pt'><b>Чтение из файла</b></p>
+<p class=MsoNormal style='text-indent:35.45pt'><b>Р§С‚РµРЅРёРµ РёР· С„Р°Р№Р»Р°</b></p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Если надо
-считать всю строку целиком или даже все строки из файла, то лучше использовать
-встроенную функцию getline(), которая принимает поток для чтения и переменную,
-в которую надо считать текст:</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Р•СЃР»Рё РЅР°РґРѕ
+СЃС‡РёС‚Р°С‚СЊ РІСЃСЋ СЃС‚СЂРѕРєСѓ С†РµР»РёРєРѕРј РёР»Рё РґР°Р¶Рµ РІСЃРµ СЃС‚СЂРѕРєРё РёР· С„Р°Р№Р»Р°, С‚Рѕ Р»СѓС‡С€Рµ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ
+РІСЃС‚СЂРѕРµРЅРЅСѓСЋ С„СѓРЅРєС†РёСЋ getline(), РєРѕС‚РѕСЂР°СЏ РїСЂРёРЅРёРјР°РµС‚ РїРѕС‚РѕРє РґР»СЏ С‡С‚РµРЅРёСЏ Рё РїРµСЂРµРјРµРЅРЅСѓСЋ,
+РІ РєРѕС‚РѕСЂСѓСЋ РЅР°РґРѕ СЃС‡РёС‚Р°С‚СЊ С‚РµРєСЃС‚:</p>
 
 <p class=MsoNormal><span lang=EN-US>#include &lt;iostream&gt;</span></p>
 
 <p class=MsoNormal><span lang=EN-US>#include &lt;fstream&gt;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>#include &lt;string&gt;     // </span>для<span
+<p class=MsoNormal><span lang=EN-US>#include &lt;string&gt;     // </span>РґР»СЏ<span
 lang=EN-US> std::getline</span></p>
 
 <p class=MsoNormal><span lang=EN-US>int main()</span></p>
 
 <p class=MsoNormal><span lang=EN-US>{</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::string line;</span></p>
+<p class=MsoNormal><span lang=EN-US>    std::string line;</span></p>
 
-<p class=MsoNormal><span lang=EN-US> </span></p>
+<p class=MsoNormal><span lang=EN-US> </span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::ifstream
-in(&quot;hello.txt&quot;); // </span>окрываем файл для чтения</p>
+<p class=MsoNormal><span lang=EN-US>    std::ifstream
+in(&quot;hello.txt&quot;); // </span>РѕРєСЂС‹РІР°РµРј С„Р°Р№Р» РґР»СЏ С‡С‚РµРЅРёСЏ</p>
 
-<p class=MsoNormal><span lang=EN-US>    if (in.is_open())</span></p>
+<p class=MsoNormal><span lang=EN-US>    if (in.is_open())</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    {</span></p>
+<p class=MsoNormal><span lang=EN-US>    {</span></p>
 
-<p class=MsoNormal><span lang=EN-US>        while (std::getline(in, line))</span></p>
+<p class=MsoNormal><span lang=EN-US>        while (std::getline(in, line))</span></p>
 
-<p class=MsoNormal><span lang=EN-US>        {</span></p>
+<p class=MsoNormal><span lang=EN-US>        {</span></p>
 
-<p class=MsoNormal><span lang=EN-US>            std::cout &lt;&lt; line
+<p class=MsoNormal><span lang=EN-US>            std::cout &lt;&lt; line
 &lt;&lt; std::endl;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>        </span>}</p>
+<p class=MsoNormal><span lang=EN-US>        </span>}</p>
 
-<p class=MsoNormal>    }</p>
+<p class=MsoNormal>    }</p>
 
-<p class=MsoNormal>    in.close();     // закрываем файл</p>
+<p class=MsoNormal>    in.close();     // Р·Р°РєСЂС‹РІР°РµРј С„Р°Р№Р»</p>
 
 <p class=MsoNormal>}</p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Также для
-чтения данных из файла для объектов ifstream и fstream может применяться
-оператор &gt;&gt; (также как и при чтении с консоли):</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>РўР°РєР¶Рµ РґР»СЏ
+С‡С‚РµРЅРёСЏ РґР°РЅРЅС‹С… РёР· С„Р°Р№Р»Р° РґР»СЏ РѕР±СЉРµРєС‚РѕРІ ifstream Рё fstream РјРѕР¶РµС‚ РїСЂРёРјРµРЅСЏС‚СЊСЃСЏ
+РѕРїРµСЂР°С‚РѕСЂ &gt;&gt; (С‚Р°РєР¶Рµ РєР°Рє Рё РїСЂРё С‡С‚РµРЅРёРё СЃ РєРѕРЅСЃРѕР»Рё):</p>
 
-<p class=MsoNormal>               </p>
+<p class=MsoNormal>               </p>
 
 <p class=MsoNormal><span lang=EN-US>#include &lt;iostream&gt;</span></p>
 
@@ -717,12 +718,12 @@ in(&quot;hello.txt&quot;); // </span>окрываем файл для чтения</p>
 
 <p class=MsoNormal><span lang=EN-US>{</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    Point(double x, double y): x{x}, y{y}
+<p class=MsoNormal><span lang=EN-US>    Point(double x, double y): x{x}, y{y}
 {}</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    double x;</span></p>
+<p class=MsoNormal><span lang=EN-US>    double x;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    double y;</span></p>
+<p class=MsoNormal><span lang=EN-US>    double y;</span></p>
 
 <p class=MsoNormal><span lang=EN-US>};</span></p>
 
@@ -730,94 +731,94 @@ in(&quot;hello.txt&quot;); // </span>окрываем файл для чтения</p>
 
 <p class=MsoNormal><span lang=EN-US>{</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::vector&lt;Point&gt; points{
+<p class=MsoNormal><span lang=EN-US>    std::vector&lt;Point&gt; points{
 Point{0, 0}, Point{4, 5}, Point{-5, 7}};</span></p>
 
-<p class=MsoNormal><span lang=EN-US>      </span></p>
+<p class=MsoNormal><span lang=EN-US>      </span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::ofstream
+<p class=MsoNormal><span lang=EN-US>    std::ofstream
 out(&quot;points.txt&quot;);</span></p>
 
-<p class=MsoNormal><span lang=EN-US>      </span></p>
+<p class=MsoNormal><span lang=EN-US>      </span></p>
 
-<p class=MsoNormal><span lang=EN-US>    </span>if (out.is_open())</p>
+<p class=MsoNormal><span lang=EN-US>    </span>if (out.is_open())</p>
 
-<p class=MsoNormal>    {</p>
+<p class=MsoNormal>    {</p>
 
-<p class=MsoNormal>        // записываем все объекты Point в файл</p>
+<p class=MsoNormal>        // Р·Р°РїРёСЃС‹РІР°РµРј РІСЃРµ РѕР±СЉРµРєС‚С‹ Point РІ С„Р°Р№Р»</p>
 
-<p class=MsoNormal>        <span lang=EN-US>for (const Point&amp; point:
+<p class=MsoNormal>        <span lang=EN-US>for (const Point&amp; point:
 points)</span></p>
 
-<p class=MsoNormal><span lang=EN-US>        {</span></p>
+<p class=MsoNormal><span lang=EN-US>        {</span></p>
 
-<p class=MsoNormal><span lang=EN-US>            out &lt;&lt; point.x &lt;&lt;
+<p class=MsoNormal><span lang=EN-US>            out &lt;&lt; point.x &lt;&lt;
 &quot; &quot; &lt;&lt; point.y &lt;&lt; std::endl;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>        }</span></p>
+<p class=MsoNormal><span lang=EN-US>        }</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    }</span></p>
+<p class=MsoNormal><span lang=EN-US>    }</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    out.close();</span></p>
+<p class=MsoNormal><span lang=EN-US>    out.close();</span></p>
 
-<p class=MsoNormal><span lang=EN-US>  </span></p>
+<p class=MsoNormal><span lang=EN-US>  </span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::vector&lt;Point&gt; new_points;</span></p>
+<p class=MsoNormal><span lang=EN-US>    std::vector&lt;Point&gt; new_points;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    std::ifstream in(&quot;points.txt&quot;);
-// </span>окрываем файл для чтения</p>
+<p class=MsoNormal><span lang=EN-US>    std::ifstream in(&quot;points.txt&quot;);
+// </span>РѕРєСЂС‹РІР°РµРј С„Р°Р№Р» РґР»СЏ С‡С‚РµРЅРёСЏ</p>
 
-<p class=MsoNormal><span lang=EN-US>    if (in.is_open())</span></p>
+<p class=MsoNormal><span lang=EN-US>    if (in.is_open())</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    {</span></p>
+<p class=MsoNormal><span lang=EN-US>    {</span></p>
 
-<p class=MsoNormal><span lang=EN-US>        double x, y;</span></p>
+<p class=MsoNormal><span lang=EN-US>        double x, y;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>        while (in &gt;&gt; x &gt;&gt; y)</span></p>
+<p class=MsoNormal><span lang=EN-US>        while (in &gt;&gt; x &gt;&gt; y)</span></p>
 
-<p class=MsoNormal><span lang=EN-US>        {</span></p>
+<p class=MsoNormal><span lang=EN-US>        {</span></p>
 
-<p class=MsoNormal><span lang=EN-US>            new_points.push_back(Point{x,
+<p class=MsoNormal><span lang=EN-US>            new_points.push_back(Point{x,
 y});</span></p>
 
-<p class=MsoNormal><span lang=EN-US>        }</span></p>
+<p class=MsoNormal><span lang=EN-US>        }</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    }</span></p>
+<p class=MsoNormal><span lang=EN-US>    }</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    in.close();</span></p>
+<p class=MsoNormal><span lang=EN-US>    in.close();</span></p>
 
-<p class=MsoNormal><span lang=EN-US>  </span></p>
+<p class=MsoNormal><span lang=EN-US>  </span></p>
 
-<p class=MsoNormal><span lang=EN-US>    for (const Point&amp; point:
+<p class=MsoNormal><span lang=EN-US>    for (const Point&amp; point:
 new_points)</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    {</span></p>
+<p class=MsoNormal><span lang=EN-US>    {</span></p>
 
-<p class=MsoNormal><span lang=EN-US>        std::cout &lt;&lt; &quot;Point X:
+<p class=MsoNormal><span lang=EN-US>        std::cout &lt;&lt; &quot;Point X:
 &quot; &lt;&lt; point.x &lt;&lt; &quot;\tY: &quot; &lt;&lt; point.y &lt;&lt;
 std::endl;</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    </span>}</p>
+<p class=MsoNormal><span lang=EN-US>    </span>}</p>
 
 <p class=MsoNormal>}</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal>Здесь вектор структур Point записывается в файл.</p>
+<p class=MsoNormal>Р—РґРµСЃСЊ РІРµРєС‚РѕСЂ СЃС‚СЂСѓРєС‚СѓСЂ Point Р·Р°РїРёСЃС‹РІР°РµС‚СЃСЏ РІ С„Р°Р№Р».</p>
 
 <p class=MsoNormal><span lang=EN-US>for (const Point&amp; point: points)</span></p>
 
 <p class=MsoNormal><span lang=EN-US>{</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    out &lt;&lt; point.x &lt;&lt; &quot;
+<p class=MsoNormal><span lang=EN-US>    out &lt;&lt; point.x &lt;&lt; &quot;
 &quot; &lt;&lt; point.y &lt;&lt; std::endl;</span></p>
 
 <p class=MsoNormal>}</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal>При чем при записи значений переменных файл они отделяются
-пробелом. В итоге будет создаваться файл в формате</p>
+<p class=MsoNormal>РџСЂРё С‡РµРј РїСЂРё Р·Р°РїРёСЃРё Р·РЅР°С‡РµРЅРёР№ РїРµСЂРµРјРµРЅРЅС‹С… С„Р°Р№Р» РѕРЅРё РѕС‚РґРµР»СЏСЋС‚СЃСЏ
+РїСЂРѕР±РµР»РѕРј. Р’ РёС‚РѕРіРµ Р±СѓРґРµС‚ СЃРѕР·РґР°РІР°С‚СЊСЃСЏ С„Р°Р№Р» РІ С„РѕСЂРјР°С‚Рµ</p>
 
 <p class=MsoNormal>0 0</p>
 
@@ -827,8 +828,8 @@ std::endl;</span></p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal>Используя оператор &gt;&gt;, можно считать последовательно
-данные в переменные x и y и ими инициализировать структуру.</p>
+<p class=MsoNormal>РСЃРїРѕР»СЊР·СѓСЏ РѕРїРµСЂР°С‚РѕСЂ &gt;&gt;, РјРѕР¶РЅРѕ СЃС‡РёС‚Р°С‚СЊ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕ
+РґР°РЅРЅС‹Рµ РІ РїРµСЂРµРјРµРЅРЅС‹Рµ x Рё y Рё РёРјРё РёРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°С‚СЊ СЃС‚СЂСѓРєС‚СѓСЂСѓ.</p>
 
 <p class=MsoNormal><span lang=EN-US>double x, y;</span></p>
 
@@ -836,18 +837,18 @@ std::endl;</span></p>
 
 <p class=MsoNormal><span lang=EN-US>{</span></p>
 
-<p class=MsoNormal><span lang=EN-US>    new_points.push_back(Point{x, y});</span></p>
+<p class=MsoNormal><span lang=EN-US>    new_points.push_back(Point{x, y});</span></p>
 
 <p class=MsoNormal>}</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Но стоит
-отметить, что это ограниченный способ, поскольку при чтении файла поток in
-использует пробел для отделения одного значения от другого и таким образом
-считывает эти значения в переменные x и y. Если же нам надо записать и затем
-считать строку, которая содержит пробелы, и какие-то другие данные, то такой
-способ, конечно, не сработает.</p>
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>РќРѕ СЃС‚РѕРёС‚
+РѕС‚РјРµС‚РёС‚СЊ, С‡С‚Рѕ СЌС‚Рѕ РѕРіСЂР°РЅРёС‡РµРЅРЅС‹Р№ СЃРїРѕСЃРѕР±, РїРѕСЃРєРѕР»СЊРєСѓ РїСЂРё С‡С‚РµРЅРёРё С„Р°Р№Р»Р° РїРѕС‚РѕРє in
+РёСЃРїРѕР»СЊР·СѓРµС‚ РїСЂРѕР±РµР» РґР»СЏ РѕС‚РґРµР»РµРЅРёСЏ РѕРґРЅРѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ РѕС‚ РґСЂСѓРіРѕРіРѕ Рё С‚Р°РєРёРј РѕР±СЂР°Р·РѕРј
+СЃС‡РёС‚С‹РІР°РµС‚ СЌС‚Рё Р·РЅР°С‡РµРЅРёСЏ РІ РїРµСЂРµРјРµРЅРЅС‹Рµ x Рё y. Р•СЃР»Рё Р¶Рµ РЅР°Рј РЅР°РґРѕ Р·Р°РїРёСЃР°С‚СЊ Рё Р·Р°С‚РµРј
+СЃС‡РёС‚Р°С‚СЊ СЃС‚СЂРѕРєСѓ, РєРѕС‚РѕСЂР°СЏ СЃРѕРґРµСЂР¶РёС‚ РїСЂРѕР±РµР»С‹, Рё РєР°РєРёРµ-С‚Рѕ РґСЂСѓРіРёРµ РґР°РЅРЅС‹Рµ, С‚Рѕ С‚Р°РєРѕР№
+СЃРїРѕСЃРѕР±, РєРѕРЅРµС‡РЅРѕ, РЅРµ СЃСЂР°Р±РѕС‚Р°РµС‚.</p>
 
 <p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>&nbsp;</p>
 
